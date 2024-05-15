@@ -225,6 +225,7 @@ a {
   }
 }
 .burger .line {
+  display: block;
   width: 100%;
   height: 3px;
   background-color: var(--dark-blue);
@@ -2555,6 +2556,7 @@ a {
   background: rgba(255, 255, 255, 0.2);
   scrollbar-width: thin;
   padding: 10px 23px;
+  resize: none;
   font-family: var(--font-family);
   font-weight: 400;
   font-size: 16px;
