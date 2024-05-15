@@ -216,3 +216,22 @@ a {
     }
   }
 }
+
+[data-aos="scale-down"] {
+  transform: scale(1.2);
+  opacity: 0;
+
+}
+
+[data-aos="scale-down"].aos-animate {
+  transform: scale(1);
+  opacity: 1;
+}
+
+.just-validate-error-label {
+  display: none;
+}
+
+.just-validate-error-field {
+  background-color: rgba(255, 0, 0, 0.4) !important;
+}

@@ -1,7 +1,7 @@
 .hero {
   padding-top: 277px;
   padding-bottom: 140px;
-  min-height: 100vh;
+  // min-height: 100vh;
   position: relative;
 
   @include big-desktop {
@@ -99,7 +99,7 @@
     }
 
     @include mobile {
-      bottom: 150px;
+      bottom: 110px;
     }
 
   }
@@ -218,7 +218,7 @@
   }
 
   10% {
-    transform: translate(20px, -20px);
+    transform: translate(2px, -2px);
   }
 
   40% {
@@ -226,7 +226,7 @@
   }
 
   80% {
-    transform: translate(-30px, 30px);
+    transform: translate(-3px, 3px);
   }
 
   100% {
@@ -244,7 +244,7 @@
   }
 
   40% {
-    transform: translate(20px, -20px);
+    transform: translate(2px, -2px);
   }
 
   60% {
@@ -252,7 +252,7 @@
   }
 
   80% {
-    transform: translate(-30px, 30px);
+    transform: translate(-3px, 3px);
   }
 
   100% {
@@ -266,7 +266,7 @@
   }
 
   10% {
-    transform: translate(20px, -20px);
+    transform: translate(2px, -2px);
   }
 
   40% {
@@ -274,7 +274,7 @@
   }
 
   80% {
-    transform: translate(-40px, 40px);
+    transform: translate(-4px, 4px);
   }
 
   100% {

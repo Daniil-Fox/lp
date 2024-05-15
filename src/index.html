@@ -43,28 +43,24 @@
     async function initMap() {
       // Промис `ymaps3.ready` будет зарезолвлен, когда загрузятся все компоненты основного модуля API
       await ymaps3.ready;
+      const { YMap, YMapDefaultSchemeLayer, YMapDefaultFeaturesLayer } = ymaps3;
 
-      const { YMap, YMapDefaultSchemeLayer } = ymaps3;
+      // Import the package to add a default marker
+      const { YMapDefaultMarker } = await ymaps3.import('@yandex/ymaps3-markers@0.0.1')
 
-      // Иницилиазируем карту
       const map = new YMap(
-        // Передаём ссылку на HTMLElement контейнера
         document.getElementById('map'),
-
-        // Передаём параметры инициализации карты
         {
-          location: {
-            // Координаты центра карты
-            center: [37.739716, 44.756251],
-
-            // Уровень масштабирования
-            zoom: 15
-          }
+          location: { center: [37.7414570, 44.756501], zoom: 16 },
         }
       );
-
-      // Добавляем слой для отображения схематической карты
       map.addChild(new YMapDefaultSchemeLayer());
+      map.addChild(new YMapDefaultFeaturesLayer());
+      const marker = new YMapDefaultMarker({
+        coordinates: [37.7414570, 44.756501],
+        color: '#9BDFEC'
+      });
+      map.addChild(marker);
     }
   </script>
 </body>

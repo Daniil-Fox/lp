@@ -138,4 +138,35 @@
     line-height: 140%;
     color: #fff;
   }
+
+  &__bottom {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-top: 40px;
+
+    @media (max-width: 600px) {
+      flex-direction: column;
+      gap: 20px;
+      margin-top: 30px;
+    }
+  }
+
+  &__btn {
+    flex: 1;
+
+    @media (max-width: 600px) {
+      width: 100%;
+      flex: unset;
+    }
+  }
+
+  &__text {
+    flex: 1;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+    color: rgba(255, 255, 255, 0.7);
+  }
 }

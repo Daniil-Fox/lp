@@ -9,59 +9,69 @@
         <h3 class="cta-per__title">Оставьте заявку и рассчитайте стоимость перевалки груза</h3>
         <form action="post" class="cta-per__form">
           <div class="cta-per__row">
-            <label class="cta-per__label">
-              <span class="cta-per__capture">Укажите тип груза</span>
+            <div class="cta-per__label">
               <select name="тип-груза" class="cta-per__select visually-hidden">
-                <option value="Сыпучий1" selected>Сыпучий1</option>
-                <option value="Сыпучий2">Сыпучий2</option>
-                <option value="Сыпучий3">Сыпучий3</option>
+                <option value="Сыпучий" selected>Сыпучий</option>
+                <option value="Наливной">Наливной</option>
+                <option value="Мешки">Мешки</option>
+                <option value="Паллеты">Паллеты</option>
+                <option value="Другое">Другое</option>
               </select>
-              <div class="cta-per__dropdown">
-                <div class="cta-per__heading">
-                  <span>Сыпучий1</span>
-                  <div class="cta-per__arrow">
-                    <svg width="21" height="22" viewBox="0 0 21 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path
-                        d="M18.8527 7.7154C18.6066 7.46935 18.2728 7.33112 17.9248 7.33112C17.5768 7.33112 17.243 7.46935 16.9969 7.7154L10.5 14.2123L4.00312 7.7154C3.75558 7.47632 3.42404 7.34403 3.07991 7.34702C2.73577 7.35001 2.40658 7.48804 2.16323 7.73139C1.91988 7.97474 1.78185 8.30393 1.77886 8.64806C1.77587 8.9922 1.90817 9.32373 2.14725 9.57128L9.57206 16.9961C9.81819 17.2421 10.152 17.3804 10.5 17.3804C10.848 17.3804 11.1818 17.2421 11.4279 16.9961L18.8527 9.57128C19.0988 9.32515 19.237 8.99137 19.237 8.64334C19.237 8.29531 19.0988 7.96153 18.8527 7.7154Z"
-                        fill="white" />
-                    </svg>
+              <label>
+                <span class="cta-per__capture">Укажите тип груза</span>
+                <div class="cta-per__dropdown">
+                  <div class="cta-per__heading">
+                    <span>Сыпучий</span>
+                    <div class="cta-per__arrow">
+                      <svg width="21" height="22" viewBox="0 0 21 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M18.8527 7.7154C18.6066 7.46935 18.2728 7.33112 17.9248 7.33112C17.5768 7.33112 17.243 7.46935 16.9969 7.7154L10.5 14.2123L4.00312 7.7154C3.75558 7.47632 3.42404 7.34403 3.07991 7.34702C2.73577 7.35001 2.40658 7.48804 2.16323 7.73139C1.91988 7.97474 1.78185 8.30393 1.77886 8.64806C1.77587 8.9922 1.90817 9.32373 2.14725 9.57128L9.57206 16.9961C9.81819 17.2421 10.152 17.3804 10.5 17.3804C10.848 17.3804 11.1818 17.2421 11.4279 16.9961L18.8527 9.57128C19.0988 9.32515 19.237 8.99137 19.237 8.64334C19.237 8.29531 19.0988 7.96153 18.8527 7.7154Z"
+                          fill="white" />
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="cta-per__content">
+                    <div class="cta-per__item">Сыпучий</div>
+                    <div class="cta-per__item">Наливной</div>
+                    <div class="cta-per__item">Мешки</div>
+                    <div class="cta-per__item">Паллеты</div>
+                    <div class="cta-per__item">Другое</div>
                   </div>
                 </div>
-                <div class="cta-per__content">
-                  <div class="cta-per__item">Сыпучий1</div>
-                  <div class="cta-per__item">Сыпучий2</div>
-                  <div class="cta-per__item">Сыпучий3</div>
-                </div>
-              </div>
-            </label>
-            <label class="cta-per__label">
-              <span class="cta-per__capture">Укажите объем груза</span>
-              <select name="тип-груза" class="cta-per__select visually-hidden">
-                <option value="До 1 тонны1" selected>До 1 тонны1</option>
-                <option value="До 1 тонны2">До 1 тонны2</option>
-                <option value="До 1 тонны3">До 1 тонны3</option>
+              </label>
+            </div>
+            <div class="cta-per__label">
+              <select name="объем-груза" class="cta-per__select visually-hidden">
+                <option value="До 10 тонн" selected>До 10 тонн</option>
+                <option value="до 100 тонн">до 100 тонн</option>
+                <option value="до 1000 тонн">до 1000 тонн</option>
+                <option value="более 1000 тн">более 1000 тн</option>
               </select>
-              <div class="cta-per__dropdown">
-                <div class="cta-per__heading">
-                  <span>До 1 тонны1</span>
-                  <div class="cta-per__arrow">
-                    <svg width="21" height="22" viewBox="0 0 21 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path
-                        d="M18.8527 7.7154C18.6066 7.46935 18.2728 7.33112 17.9248 7.33112C17.5768 7.33112 17.243 7.46935 16.9969 7.7154L10.5 14.2123L4.00312 7.7154C3.75558 7.47632 3.42404 7.34403 3.07991 7.34702C2.73577 7.35001 2.40658 7.48804 2.16323 7.73139C1.91988 7.97474 1.78185 8.30393 1.77886 8.64806C1.77587 8.9922 1.90817 9.32373 2.14725 9.57128L9.57206 16.9961C9.81819 17.2421 10.152 17.3804 10.5 17.3804C10.848 17.3804 11.1818 17.2421 11.4279 16.9961L18.8527 9.57128C19.0988 9.32515 19.237 8.99137 19.237 8.64334C19.237 8.29531 19.0988 7.96153 18.8527 7.7154Z"
-                        fill="white" />
-                    </svg>
+              <label>
+                <span class="cta-per__capture">Укажите объем груза</span>
+                <div class="cta-per__dropdown">
+                  <div class="cta-per__heading">
+                    <span>До 10 тонн</span>
+                    <div class="cta-per__arrow">
+                      <svg width="21" height="22" viewBox="0 0 21 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M18.8527 7.7154C18.6066 7.46935 18.2728 7.33112 17.9248 7.33112C17.5768 7.33112 17.243 7.46935 16.9969 7.7154L10.5 14.2123L4.00312 7.7154C3.75558 7.47632 3.42404 7.34403 3.07991 7.34702C2.73577 7.35001 2.40658 7.48804 2.16323 7.73139C1.91988 7.97474 1.78185 8.30393 1.77886 8.64806C1.77587 8.9922 1.90817 9.32373 2.14725 9.57128L9.57206 16.9961C9.81819 17.2421 10.152 17.3804 10.5 17.3804C10.848 17.3804 11.1818 17.2421 11.4279 16.9961L18.8527 9.57128C19.0988 9.32515 19.237 8.99137 19.237 8.64334C19.237 8.29531 19.0988 7.96153 18.8527 7.7154Z"
+                          fill="white" />
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="cta-per__content">
+                    <div class="cta-per__item">До 10 тонн</div>
+                    <div class="cta-per__item">до 100 тонн</div>
+                    <div class="cta-per__item">до 1000 тонн</div>
+                    <div class="cta-per__item">более 1000 тн</div>
                   </div>
                 </div>
-                <div class="cta-per__content">
-                  <div class="cta-per__item">До 1 тонны1</div>
-                  <div class="cta-per__item">До 1 тонны2</div>
-                  <div class="cta-per__item">До 1 тонны3</div>
-                </div>
-              </div>
-            </label>
+              </label>
+            </div>
             <label class="cta-per__label">
               <span class="cta-per__capture">Укажите ваш номер телефона</span>
-              <input type="tel" class="cta-per__input" placeholder="+7 (___) ___-__-__">
+              <input type="tel" name="Телефон" class="cta-per__input input-tel" placeholder="+7 (___) ___-__-__">
             </label>
 
             <button class="btn-reset btn btn--white cta-per__btn">Рассчитать стоимость</button>
