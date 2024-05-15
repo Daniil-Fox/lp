@@ -1230,6 +1230,12 @@ a {
   position: relative;
   z-index: 10;
 }
+.cta-per__label:nth-child(2) {
+  z-index: 8;
+}
+.cta-per__label:nth-child(3) {
+  z-index: 5;
+}
 .cta-per__input, .cta-per__heading, .cta-per__item {
   display: -webkit-box;
   display: -ms-flexbox;
