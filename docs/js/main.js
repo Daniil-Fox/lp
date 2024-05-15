@@ -15701,7 +15701,7 @@ aos__WEBPACK_IMPORTED_MODULE_3__.init({
   // the delay on throttle used while scrolling the page (advanced)
 
   // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
-  offset: 120,
+  offset: 0,
   // offset (in px) from the original trigger point
   delay: 0,
   // values from 0 to 3000, with step 50ms
