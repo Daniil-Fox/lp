@@ -5132,6 +5132,8 @@ selectsContainers.forEach(select => {
     item.addEventListener("click", e => {
       dropdownHeader.querySelector("span").textContent = item.textContent;
       select.value = item.textContent;
+      dropdownHeader.classList.remove("active");
+      dropdownContent.style.maxHeight = null;
     });
   });
 });
