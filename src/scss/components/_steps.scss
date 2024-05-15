@@ -1,0 +1,105 @@
+.steps {
+  margin-bottom: 120px;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: translate(-50%, 50%) rotate(180deg);
+    width: 500px;
+    height: 500px;
+    background-image: url('./../img/map.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    @include small-tablet {
+      display: none;
+    }
+  }
+
+  @include tablet {
+    margin-bottom: 60px;
+  }
+
+  &__title {
+    margin-bottom: 60px;
+
+    @include tablet {
+      margin-bottom: 40px;
+    }
+  }
+
+  &__items {
+    margin-bottom: 40px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px 57px;
+
+    @include tablet {
+      gap: 30px;
+    }
+
+    @media (max-width: 850px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (max-width: 600px) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__bottom {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__btn {
+    width: 284px;
+  }
+
+  &__fig {
+    display: block;
+    margin-bottom: 20px;
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 96px;
+
+    color: var(--dark-blue);
+
+    @include tablet {
+      font-size: 86px;
+      margin-bottom: 16px;
+    }
+  }
+
+  &__capture {
+    display: block;
+    margin-bottom: 20px;
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 24px;
+    color: #000;
+
+    @include tablet {
+      font-size: 20px;
+    }
+  }
+
+  &__desc {
+    margin: 0;
+    margin-bottom: 30px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    color: #000;
+  }
+
+  &__btn {
+    width: 100%;
+    max-width: 283px;
+  }
+}

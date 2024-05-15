@@ -1,0 +1,27 @@
+.menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  background-color: var(--dark-blue);
+  transform: translateY(-110%);
+  transition: transform .3s ease-out;
+
+  &.active {
+    transform: translateY(0);
+  }
+
+  &__tel {
+    display: inline-block !important;
+    color: #fff;
+  }
+
+  &__body {
+    padding: 110px var(--container-offset) 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+}

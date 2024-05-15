@@ -1,0 +1,110 @@
+.footer {
+  background-color: var(--dark-blue);
+  padding: 20px 0;
+
+  a {
+    @include hover {
+      text-decoration: underline;
+    }
+  }
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__left {
+    display: flex;
+    align-items: center;
+    gap: 100px;
+
+    @include big-desktop {
+      gap: 50px;
+    }
+  }
+
+  &__links {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+
+    a {
+      font-family: var(--second-family);
+      font-weight: 400;
+      font-size: 16px;
+      color: #fff;
+    }
+
+    @include tablet {
+      display: none;
+    }
+
+    &--mob {
+      display: none;
+
+      @include tablet {
+        display: flex;
+        margin-top: 15px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+      }
+    }
+  }
+
+  &__right {
+    display: flex;
+    align-items: center;
+    gap: 55px;
+
+    @include small-tablet {
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 10px;
+    }
+  }
+
+  &__tel {
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 140%;
+    color: #fff;
+
+
+    @include big-desktop {
+      font-size: 20px;
+    }
+  }
+
+  &__mail {
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 140%;
+    color: #fff;
+
+    @include big-desktop {
+      font-size: 18px;
+    }
+  }
+
+  &__bottom {
+    margin-top: -24px;
+    display: flex;
+    justify-content: flex-end;
+
+    @include small-tablet {
+      margin-top: 0px;
+    }
+  }
+
+  &__copy {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    color: #fff;
+  }
+}

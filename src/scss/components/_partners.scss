@@ -1,0 +1,51 @@
+.partners {
+  margin-bottom: 100px;
+
+  @include tablet {
+    margin-bottom: 60px;
+  }
+
+  &__title {
+    margin-bottom: 60px;
+
+    @include tablet {
+      margin-bottom: 40px;
+    }
+  }
+
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(16.66666%, 20%));
+
+    @include small-tablet {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 129px;
+    padding: 30px 15px;
+    filter: saturate(0);
+
+    transition: filter .3s ease-out;
+
+    @include small-tablet {
+      height: 80px;
+      padding: 20px 10px;
+    }
+
+    img {
+      width: auto;
+      height: 100%;
+      object-fit: contain;
+    }
+
+
+    @include hover {
+      filter: saturate(1);
+    }
+  }
+}

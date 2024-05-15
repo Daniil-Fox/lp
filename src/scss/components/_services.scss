@@ -1,0 +1,155 @@
+.services {
+  padding: 120px 0;
+  padding-bottom: 0;
+  position: relative;
+  z-index: 2;
+
+  @include tablet {
+    padding: 60px 0;
+    padding-bottom: 0;
+  }
+
+  &__title {
+    max-width: 1040px;
+    margin: 0 auto;
+    margin-bottom: 60px;
+
+    @include tablet {
+      margin-bottom: 40px;
+    }
+  }
+
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+
+    @media (max-width: 1200px) {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    @include mobile {
+      display: grid;
+      grid-template-columns: 1fr;
+    }
+  }
+}
+
+.services-item {
+  height: 493px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+
+  padding: 50px 30px;
+
+  background-image: url('./../img/water-mark.png');
+  background-position: right bottom;
+  background-size: 160px;
+  background-repeat: no-repeat;
+
+  @media (max-width: 1200px) {
+    flex: 1;
+    padding: 40px 20px;
+    min-width: 45%;
+    max-width: 100%;
+    height: auto;
+  }
+
+  @include tablet {
+    padding: 30px;
+  }
+
+  &__header {
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    gap: 34px;
+    max-width: 370px;
+
+    @media (max-width: 1200px) {
+      gap: 15px;
+      max-width: 100%;
+    }
+  }
+
+  &__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    border: 1px solid var(--dark-blue);
+    flex-shrink: 0;
+
+    @include tablet {
+      width: 60px;
+      height: 60px;
+    }
+
+    svg {
+      width: 50px;
+      height: 50px;
+
+      @include tablet {
+        width: 37px;
+        height: 37px;
+      }
+    }
+  }
+
+  &__title {
+    display: block;
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 140%;
+    color: #000;
+
+    @include tablet {
+      font-size: 18px;
+    }
+  }
+
+  &__list {
+    margin-bottom: 40px;
+
+    @include tablet {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__item {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    color: var(--blue);
+
+    span {
+      color: #000;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 18px;
+    }
+  }
+
+  &__bottom {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    color: #000;
+
+    img {
+      display: block;
+      width: 22px;
+      height: 22px;
+      flex-shrink: 0;
+    }
+  }
+}

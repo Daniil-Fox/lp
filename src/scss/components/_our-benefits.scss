@@ -1,0 +1,277 @@
+.our-benefits {
+
+  position: relative;
+  padding-bottom: 120px;
+
+  @include tablet {
+    padding-bottom: 60px;
+  }
+
+
+
+  &__extra {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+
+    @include mobile {
+      grid-template-columns: 1fr;
+    }
+
+    &-desc {
+      padding: 40px 30px;
+      border-radius: 20px;
+      background-color: var(--dark-blue);
+      background-image: url('./../img/water-mark-2.png');
+      background-position: right bottom;
+      background-size: 180px;
+      background-repeat: no-repeat;
+
+      @include mobile {
+        padding: 30px;
+      }
+
+      p {
+        margin: 0;
+
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 140%;
+        color: #fff;
+
+        @include mobile {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+
+  &__bg {
+    position: absolute;
+    z-index: -1;
+    right: 0;
+    top: 260px;
+
+    height: 670px;
+
+    @include tablet {
+      height: 500px;
+      top: 450px;
+    }
+
+    @include small-tablet {
+      top: 200px;
+      height: 350px;
+    }
+
+    @include mobile {
+      height: 220px;
+    }
+
+    img {
+      height: 100%;
+      width: auto;
+    }
+  }
+
+  &__title {
+    margin-bottom: 30px;
+
+    @include small-tablet {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__header {
+    margin: 0 auto;
+    margin-bottom: 60px;
+    max-width: 735px;
+
+    @include tablet {
+      margin-bottom: 40px;
+      max-width: 90%;
+    }
+  }
+
+  &__desc {
+    margin: 0;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    text-align: center;
+    color: #000;
+  }
+
+  &__row {
+    margin-bottom: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 75px;
+
+    @include tablet {
+      margin-bottom: 60px;
+      gap: 40px;
+    }
+
+    @include small-tablet {
+      flex-direction: column;
+      gap: 30px;
+    }
+
+    @media (max-width: 600px) {
+      // align-items: flex-start;
+    }
+  }
+
+  &__text {
+    margin: 0;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 140%;
+    color: #000;
+    max-width: 470px;
+
+    @include tablet {
+      font-size: 18px;
+    }
+
+    @include small-tablet {
+      text-align: center;
+    }
+
+    @media (max-width: 600px) {
+      margin: 0 auto;
+    }
+  }
+
+  &__items {
+
+    display: flex;
+    gap: 96px;
+
+    @include tablet {
+      gap: 60px;
+    }
+
+    @media (max-width: 600px) {
+      flex-direction: column;
+      gap: 20px;
+    }
+  }
+}
+
+
+.our-item {
+  flex: 1;
+
+  &__value {
+    display: block;
+    margin-bottom: 30px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 140%;
+    color: var(--dark-blue);
+
+    @include tablet {
+      margin-bottom: 20px;
+    }
+
+    span {
+      font-size: 64px;
+      line-height: 87%;
+    }
+  }
+
+  &__desc {
+    display: block;
+    margin: 0;
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    color: #000;
+  }
+}
+
+.our-dif {
+  display: flex;
+  gap: 138px;
+  align-items: center;
+  padding-bottom: 120px;
+
+  @include tablet {
+    padding-bottom: 60px;
+    gap: 40px;
+  }
+
+  @include small-tablet {
+    flex-direction: column-reverse;
+  }
+
+  &__icon {
+    margin-bottom: 30px;
+    width: 80px;
+    height: 80px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    border: 1px solid var(--dark-blue);
+
+    svg {
+      width: 50px;
+      height: 50px;
+    }
+  }
+
+  &__text {
+    display: block;
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 140%;
+    text-align: center;
+    color: #000;
+  }
+
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 45px;
+
+    @media (max-width: 600px) {
+      grid-template-columns: 1fr;
+      gap: 30px;
+    }
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__title {
+    display: block;
+    flex-shrink: 0;
+    max-width: 500px;
+
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 140%;
+    color: var(--dark-blue);
+
+    @include tablet {
+      font-size: 28px;
+      max-width: 400px;
+    }
+
+    @include small-tablet {
+      text-align: center;
+    }
+  }
+}

@@ -1,0 +1,15 @@
+// если вы хотите использовать sass-переменные - удалите root
+// colors
+:root {
+  // base
+  --font-family: "Sofadi One", sans-serif;
+  --second-family: "Days One", sans-serif;
+  --content-width: 1440px;
+  --container-offset: 35px;
+  --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+
+  // colors
+  --light-color: #fff;
+  --blue: #a2d9f7;
+  --dark-blue: #0f00a1;
+}
